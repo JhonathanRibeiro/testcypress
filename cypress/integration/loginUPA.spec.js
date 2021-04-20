@@ -1,17 +1,15 @@
 /// <reference types="cypress" />
 
+import Logon from '../support/views/Logon';
+
 describe('Login', () => {
     it('Deve realizar o login no sistema', () => {
         cy.viewport(1366, 835);
 
-        cy.visit('https://treinamento-saude2.ids.inf.br/#/inicio')
-        //usuário
-        cy.get('[rotulo="Nome de Acesso"] > div > .input-full')
-            .type('idssaude').should('have.value', 'idssaude')
-        // senha
-        cy.get('[rotulo="Senha"] > div > .input-full')
-            .type('I@0309ds').should('have.value', 'I@0309ds')
-        //btn acessar
+        Logon.acessarLogin();
+        Logon.preencherLogin();
+        
+        ////btn acessar
         cy.get('.btn-outline').click();
         //unidade pré-selecionada, apenas clica novamente no botão de acessar
         cy.wait(2000)
