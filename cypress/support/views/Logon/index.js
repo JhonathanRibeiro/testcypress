@@ -3,11 +3,8 @@
 const el = require('./elements').ELEMENTS;
 
 class Logon {
-    acessarLogin() {
-        cy.visit('https://treinamento-saude2.ids.inf.br/#/login')
-    }
-
-    preencherLogin() {
+    acessaSistemaPreencheLogin() {
+        cy.visit('/')
         //preenchendo o campo usuário
         cy.get(el.usuario).type('idssaude').should('have.value', 'idssaude')
         // preenchendo o campo senha

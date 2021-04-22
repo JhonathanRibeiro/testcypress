@@ -1,0 +1,35 @@
+{
+  "uid" : "c53d7fafe88573e6",
+  "name" : "Deve cadastrar um novo usuário não identificado",
+  "fullName" : "Deve cadastrar um novo usuário não identificado",
+  "historyId" : "2ae458ca43f86c1d273d653160749657",
+  "time" : {
+    "start" : 1619080975112,
+    "stop" : 1619080975392,
+    "duration" : 280
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Login e Recepção"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c53d7fafe88573e6.json",
+  "parameterValues" : [ ]
+}

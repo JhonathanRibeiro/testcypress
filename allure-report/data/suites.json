@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Login e Recepção",
+    "children" : [ {
+      "name" : "Deve realizar o login no sistema",
+      "uid" : "a15496d4c2d472e8",
+      "parentUid" : "83566a9da6403e6eb23f3751f088b5b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619080928977,
+        "stop" : 1619080974901,
+        "duration" : 45924
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Deve cadastrar um novo usuário não identificado",
+      "uid" : "c53d7fafe88573e6",
+      "parentUid" : "83566a9da6403e6eb23f3751f088b5b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619080975112,
+        "stop" : 1619080975392,
+        "duration" : 280
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Deve selecionar o setor e motivo do atendimento e finalizar",
+      "uid" : "f72231d6147e8e55",
+      "parentUid" : "83566a9da6403e6eb23f3751f088b5b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619080975396,
+        "stop" : 1619080975421,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "83566a9da6403e6eb23f3751f088b5b5"
+  } ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "f72231d6147e8e55",
+  "name" : "Deve selecionar o setor e motivo do atendimento e finalizar",
+  "fullName" : "Deve selecionar o setor e motivo do atendimento e finalizar",
+  "historyId" : "8fa5f65d248b983c147be5ca9bb61190",
+  "time" : {
+    "start" : 1619080975396,
+    "stop" : 1619080975421,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Login e Recepção"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f72231d6147e8e55.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,31 @@
+[ {
+  "uid" : "f72231d6147e8e55",
+  "name" : "Deve selecionar o setor e motivo do atendimento e finalizar",
+  "time" : {
+    "start" : 1619080975396,
+    "stop" : 1619080975421,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a15496d4c2d472e8",
+  "name" : "Deve realizar o login no sistema",
+  "time" : {
+    "start" : 1619080928977,
+    "stop" : 1619080974901,
+    "duration" : 45924
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c53d7fafe88573e6",
+  "name" : "Deve cadastrar um novo usuário não identificado",
+  "time" : {
+    "start" : 1619080975112,
+    "stop" : 1619080975392,
+    "duration" : 280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

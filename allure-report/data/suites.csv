@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Apr 22 05:42:55 BRT 2021","Thu Apr 22 05:42:55 BRT 2021","25","","Login e Recepção","","","","Deve selecionar o setor e motivo do atendimento e finalizar",""
+"passed","Thu Apr 22 05:42:08 BRT 2021","Thu Apr 22 05:42:54 BRT 2021","45924","","Login e Recepção","","","","Deve realizar o login no sistema",""
+"passed","Thu Apr 22 05:42:55 BRT 2021","Thu Apr 22 05:42:55 BRT 2021","280","","Login e Recepção","","","","Deve cadastrar um novo usuário não identificado",""

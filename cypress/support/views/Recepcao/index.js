@@ -2,6 +2,7 @@ const el = require('./elements').ELEMENTS;
 
 class Recepcao {
     cadastraNovoUsuarioNaoIdentificado() {
+        cy.wait(2000)
         //expande o menu UPA
         cy.get(el.sidebar).click()
         //acessa a tela de recepção
