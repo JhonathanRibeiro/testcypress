@@ -1,10 +1,9 @@
 //ações de interação com a view
-
 const el = require('./elements').ELEMENTS;
 
-class Logon {
-    acessaSistemaPreencheLogin() {
-        cy.visit('/')
+class LoginPage {
+    login() {
+        cy.visit('/');
         //preenchendo o campo usuário
         cy.get(el.usuario).type('idssaude').should('have.value', 'idssaude')
         // preenchendo o campo senha
@@ -17,4 +16,4 @@ class Logon {
     }
 }
 
-export default new Logon();
+export default new LoginPage();

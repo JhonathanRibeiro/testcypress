@@ -1,17 +1,18 @@
 const el = require('./elements').ELEMENTS;
 
 class Recepcao {
+    
+    acessaPaginaRecepcao() {
+           //expande o menu UPA
+           cy.get(el.sidebar).click()
+           //acessa a tela de recepção
+           cy.get(el.viewRecepcao).click()
+           //clica no botão para adicionar uma nova recepção
+           cy.get(el.btnNew).click()
+    }
+
     cadastraNovoUsuarioNaoIdentificado() {
-        cy.wait(2000)
-        //expande o menu UPA
-        cy.get(el.sidebar).click()
-        //acessa a tela de recepção
-        cy.get(el.viewRecepcao).click()
-        //clica no botão para adicionar uma nova recepção
-        cy.get(el.btnNew).click()
         cy.get(el.naoId).click()
-        //aguardando 1seg..(substituir para estrutura .then async await)
-        cy.wait(1000)
         //preenchendo o campo descrição - obrigatório
         cy.get(el.descricao)
             .type('Fulano da Silva')
@@ -36,14 +37,13 @@ class Recepcao {
             .type('Alguma coisa qualquer')
             .should('have.value', 'Alguma coisa qualquer')
         //salvando novo usuário
-        cy.wait(1000)
         cy.get(el.btnSave).click()
     }
 
     selecionaSetorAtendimentoInformacoesFinais() {
         //selecionando o setor de atendimento
         cy.get(el.setorAtendimento).click()
-        //selecioanndo o primeiro setor da lista
+        //selecionando o primeiro setor da lista
         cy.get(el.primeiraOpcaoSetor).click()
         //salvando recepção
         cy.get(el.btnSalvarRecepcao).click()
