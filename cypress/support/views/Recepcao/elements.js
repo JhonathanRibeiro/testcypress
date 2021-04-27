@@ -1,5 +1,5 @@
 export const ELEMENTS = {
-    sidebar: ':nth-child(2) > a.ng-tns-c24-38',
+    sidebar: ':nth-child(2) > a.ng-tns-c24-31',
     viewRecepcao: '.active-menuitem > .ng-trigger > :nth-child(1) > .ng-star-inserted',
     btnNew: '.pi-plus',
     naoId: '.nao-identificado',
@@ -13,7 +13,7 @@ export const ELEMENTS = {
     observacoes: '.observacoes',
     btnSave: '.btn-primary > .ui-button-text',
     setorAtendimento: 'app-recepcao-setor > :nth-child(1) > .ng-untouched > .select-tab > .autocomplete-container > .auto-complete-select > .ui-autocomplete > .ui-autocomplete-dropdown > .ui-button-text',
-    primeiraOpcaoSetor: '.ui-autocomplete-items > :nth-child(1) > .ng-star-inserted > span',
+    primeiraOpcaoSetor: '#p-highlighted-option > :nth-child(1) > .ng-star-inserted',
     btnSalvarRecepcao: 'f17-form-crud > .pi-check',
     redirectViewListRecepcoes: '.ui-toolbar-group-left > a'
 }

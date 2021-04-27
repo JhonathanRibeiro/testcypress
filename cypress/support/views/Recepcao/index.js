@@ -1,14 +1,15 @@
 const el = require('./elements').ELEMENTS;
 
 class Recepcao {
-    
+
     acessaPaginaRecepcao() {
-           //expande o menu UPA
-           cy.get(el.sidebar).click()
-           //acessa a tela de recepção
-           cy.get(el.viewRecepcao).click()
-           //clica no botão para adicionar uma nova recepção
-           cy.get(el.btnNew).click()
+        //expande o menu UPA
+        cy.get(el.sidebar).click()
+        //acessa a tela de recepção
+        cy.get(el.viewRecepcao).click()
+        //clica no botão para adicionar uma nova recepção
+        cy.wait(1000)
+        cy.get(el.btnNew).click()
     }
 
     cadastraNovoUsuarioNaoIdentificado() {

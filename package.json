@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run":"cypress run --env allure=true",
-    "allure:generate":"allure generate allure-results",
-    "allure:open":"allure open allure-report",
-    "allure:clear":"rm -r allure-results/ allure-report || true",
-    "test":"npx npm-run-all allure:clear cy:run allure:generate"
+    "cy:run": "cypress run --env allure=true",
+    "allure:generate": "allure generate allure-results",
+    "allure:open": "allure open allure-report",
+    "allure:clear": "rm -r allure-results/ allure-report || true",
+    "test": "npx npm-run-all allure:clear cy:run allure:generate"
   },
   "keywords": [],
   "author": "",

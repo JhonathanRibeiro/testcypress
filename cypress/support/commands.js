@@ -1,3 +1,4 @@
+import Login from '../support/views/Logon';
 
 let LOCAL_STORAGE_MEMORY = {};
 
@@ -11,4 +12,16 @@ Cypress.Commands.add("restoreLocalStorage", () => {
   Object.keys(LOCAL_STORAGE_MEMORY).forEach(key => {
     localStorage.setItem(key, LOCAL_STORAGE_MEMORY[key]);
   });
+});
+
+before(() => {
+  Login.login();
+});
+
+beforeEach(() => {
+  cy.restoreLocalStorage();
+});
+
+afterEach(() => {
+  cy.saveLocalStorage();
 });
