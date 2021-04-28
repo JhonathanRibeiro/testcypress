@@ -10,6 +10,7 @@ class Recepcao {
         //clica no botão para adicionar uma nova recepção
         cy.wait(1000)
         cy.get(el.btnNew).click()
+        cy.get('.ui-toolbar-group-left > a').click();
     }
 
     cadastraNovoUsuarioNaoIdentificado() {

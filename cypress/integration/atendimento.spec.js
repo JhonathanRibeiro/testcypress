@@ -4,33 +4,37 @@ import Triagem from '../support/views/Triagem';
 import Delete from '../support/views/DeletarRecepcao';
 
 describe('Recepção', () => {
-    it('Acessando recepção', () => {
+    it('Acessando o sistema', () => {
         Recepcao.acessaPaginaRecepcao();
     });
     //Cadastro de um novo usuário não identificado
-    it('Cadastrando usuário', () => {
-        Recepcao.cadastraNovoUsuarioNaoIdentificado();
-    });
-    
-    it('Selecionando setor e encerrando atendimento', () => {
-        Recepcao.selecionaSetorAtendimentoInformacoesFinais();
-    });
+    // it('Cadastrando usuário', () => {
+    //     Recepcao.cadastraNovoUsuarioNaoIdentificado();
+    // });
+
+    // it('Selecionando setor e encerrando atendimento', () => {
+    //     Recepcao.selecionaSetorAtendimentoInformacoesFinais();
+    // });
 });
 
-describe('Triagem', () => {
-    it('Acessando tela de triagem', () => {
-        Triagem.acessaPaginaTriagem();
-    });
+// describe('Triagem', () => {
+//     it('Acessando tela de triagem', () => {
+//         Triagem.acessaPaginaTriagem();
+//     });
 
-    it('Triando usuário não identificado', () => {
-        Triagem.triagemDeUsuarioNaoIdentificado();
-    });
-});
+//     it('Triando usuário não identificado', () => {
+//         Triagem.triagemDeUsuarioNaoIdentificado();
+//     });
+// });
 
-describe('Deletando atendimento',()=>{
+describe('Deletando atendimento', () => {
     it('Excluindo recepção', () => {
-        // Delete.recepcao();
-        cy.log('em andamento...');
+        Delete.recepcao();
+    });
+
+    it('', () => {
+        cy.log('Recerregando a página enquanto existir mais de uma recepção....')
+            document.location.reload();
     });
 });
 
